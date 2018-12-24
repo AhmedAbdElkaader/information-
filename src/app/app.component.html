@@ -1,0 +1,22 @@
+<div class="card" style="width:100%">
+  <img class="card-img-top" src="{{image}}" alt="Card image cap" style="width:100px;">
+  <div class="card-body">
+    <h5 class="card-title">{{names}}</h5>
+    <p class="card-text">{{Bio}}</p>
+    <p class="card-text">{{Company}}</p>
+    <p class="card-text">{{location}}</p>
+    <p class="card-text">Followers : {{Folwrs}}</p>
+    <p class="card-text">Following : {{Folwing}}</p>
+  </div>
+  <div class="card-body">
+    <h1 style="font-weight: bold">** MY REBOS **</h1>
+  </div>
+  <div class="card-body" *ngFor="let item of zozRepo">
+    <p>{{item.name}}</p>
+    <p>{{item.description}}</p>
+    <p>Star : {{item.watchers}}</p>
+    <p>language : {{item.language}}</p>
+    <a href="{{item.html_url}}">{{item.full_name}}</a>    
+    <hr>
+  </div>
+</div>
